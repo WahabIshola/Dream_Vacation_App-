@@ -1,4 +1,5 @@
-FROM node:18-alpine AS builder
+# Stage 1: Build React app
+FROM node:slim AS builder
 
 # set enviromental variable
 ENV NODE_OPTIONS=--openssl-legacy-provider
